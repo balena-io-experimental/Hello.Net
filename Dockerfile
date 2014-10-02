@@ -1,4 +1,4 @@
-FROM resin/rpi-buildstep-armv6hf:latest:14.04
+FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN apt-get update
 RUN apt-get -y install git autoconf libtool g++ gettext make mono-complete
