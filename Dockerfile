@@ -6,7 +6,7 @@ RUN apt-get -y install git autoconf libtool g++ gettext make mono-complete
 RUN git clone git://github.com/mono/mono.git /mono
 WORKDIR /mono
 RUN ./autogen.sh --prefix=/usr/local
-RUN make && make install
+make get-monolite-latest
 
 ADD . /app
 
