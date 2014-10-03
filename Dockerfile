@@ -3,6 +3,7 @@ FROM resin/rpi-buildstep-armv6hf:latest
 RUN apt-get update
 RUN sudo apt-get install -y mono-runtime
 
-ADD . /app
+ADD . /App
 
-CMD ["mono","/app/hello.exe"]
+RUN echo mono App/hello.exe >/start
+RUN chmod +x /start
