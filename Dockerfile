@@ -1,12 +1,7 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN apt-get update
-RUN apt-get -y install git autoconf libtool g++ gettext make mono-complete
-
-RUN git clone git://github.com/mono/mono.git /mono
-WORKDIR /mono
-RUN ./autogen.sh --prefix=/usr/local
-make get-monolite-latest
+RUN sudo apt-get install mono-complete
 
 ADD . /app
 
