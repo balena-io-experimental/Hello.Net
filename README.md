@@ -1,9 +1,24 @@
-# A barebones resin.io project to demonstrate running .NET using C# code
+##A barebones resin.io project to demonstrate running .NET using C# code
 
 ## Usage
 
 This is a [resin.io](http://resin.io) application. Clone it, push
 it to your resin endpoint and you're good to go!
+
+###Notice:
+
+This application only installs mono-runtime that allows running .NET application on Raspbian OS.
+
+If you want to install the complete version of Mono includes Mono runtime, develoment tools and all libraries to build and deploy .NET application directly on 
+Raspberry Pi. You can change (view Dockerfile)
+
+*RUN sudo apt-get install -y mono-runtime
+
+Into
+
+*RUN sudo apt-get install -y mono-complete
+
+Then you can build and deploy your code on Raspberry Pi.
 
 ## Parts
 
@@ -32,6 +47,8 @@ then add the resin remote: (replacing <myUserName> and <myApplicationName> with 
 and finally push the code to your raspberry pi:
 
 `$ git push resin master`
+ 
+
 
 
 
