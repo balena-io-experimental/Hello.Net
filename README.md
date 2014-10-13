@@ -1,4 +1,4 @@
-#A barebones resin.io project to demonstrate running .NET using C# code
+#Hello .NET in Resin.io
 
 ##Notice:
 
