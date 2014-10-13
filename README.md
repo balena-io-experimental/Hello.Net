@@ -1,6 +1,6 @@
 #Hello .NET in Resin.io
 
-##Notice:
+## Introduction
 
 This application only installs mono-runtime that allows running .NET application on [Resin.io](http://resin.io).
 
