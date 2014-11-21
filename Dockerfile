@@ -1,4 +1,4 @@
-FROM resin/rpi-buildstep-armv6hf:latest
+FROM resin/rpi-raspbian:wheezy
 
 RUN apt-get update
 RUN sudo apt-get install -y mono-runtime
