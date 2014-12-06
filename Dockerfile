@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:wheezy
 
 RUN apt-get update
-RUN sudo apt-get install -y mono-runtime
+RUN apt-get install -y mono-runtime
 
 ADD . /App
 
