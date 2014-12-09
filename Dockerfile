@@ -5,4 +5,4 @@ RUN apt-get install -y mono-runtime
 
 ADD . /App
 
-CMR ["mono", "App/hello.exe"]
+CMD ["mono", "App/hello.exe"]
